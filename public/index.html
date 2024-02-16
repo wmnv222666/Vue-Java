@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>仓储管理系统</title>
+</head>
+
+<body class="no-skin">
+    <script>
+        /*
+         * 生产环境 自动获取主机地址【不可更改】
+         * example: http://localhost:8080
+         */
+        var ProductEnvironment = window.location.origin == undefined ? window.location.protocol + '//' + window.location
+            .hostname + (window.location.port ? ':' + window.location.port : '') : location.origin;
+        /*
+         * 请求方法前缀路径【可以更改】
+         */
+        var requestPrefixPath = '/wms/web/';
+        /*
+         * 页面静态路由显示基本路径【可以更改】
+         */
+        var routersBasePath = '/wms/web/html/';
+
+        window.GLOBALCONFIG = {
+            ProductEnvironment: ProductEnvironment,
+            requestPrefixPath: requestPrefixPath,
+            routersBasePath: routersBasePath,
+            /*
+             * 开发环境请求全路径【不需要更改】
+             */
+            devRequestPath: 'http://127.0.0.1:8080' + requestPrefixPath,
+            /*
+             * 生产环境请求全路径【不需要更改】
+             */
+            proRequestPath: ProductEnvironment + requestPrefixPath
+        }
+    </script>
+    <noscript>
+    <strong>We're sorry,Please enable it to continue.</strong>
+  </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

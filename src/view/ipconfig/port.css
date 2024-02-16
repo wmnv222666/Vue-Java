@@ -1,0 +1,98 @@
+*{margin:0;padding:0}
+body,
+html{width:100%;height:100%;overflow:hidden;min-width:1100px}
+.is-transformed {
+  width: 680px;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+.x.dv-full-screen-container {
+  background: #000;
+  color: #fff;
+}
+
+.x #top-header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #141414;
+  text-align: center;
+  line-height: 100px;
+}
+#top-header .center-title {
+  font-size: 30px;
+}
+
+.x .is-transformed .ivu-card {
+  width: 100%;
+  height: 100%;
+  background: #141414;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 2px;
+}
+
+.x-port_button-group {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.x-port_button-group .ivu-btn{
+  color: #fff;
+  border: none;
+}
+
+.x-port_button-group .ivu-btn.ivu-btn-success, .x-port_button-group .ivu-btn.ivu-btn-success:hover{
+  background: #52c41a;
+}
+.x-port_button-group .ivu-btn.ivu-btn-info,.x-port_button-group .ivu-btn.ivu-btn-info:hover{
+  background: #1890ff;
+}
+.x-port_button-group .ivu-btn.ivu-btn-warning,.x-port_button-group .ivu-btn.ivu-btn-warning:hover{
+  background: #faad14;
+}
+.x-port_button-group .ivu-btn.ivu-btn-error,.x-port_button-group .ivu-btn.ivu-btn-error:hover{
+  background: #ff4d4f;
+}
+
+
+.x .is-transformed .ivu-alert-warning {
+  border: none;
+  background: #faad14;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.x .is-transformed .ivu-input-group-append, .x .is-transformed .ivu-input-group-prepend, .x .is-transformed .ivu-input, .x .is-transformed .ivu-select {
+  background: transparent;
+  border: 1px solid #434343;
+  color: #fff;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.x .is-transformed .ivu-select-dropdown {
+  background: #141414;
+}
+.x .is-transformed .ivu-select-item {
+  color: #fff;
+}
+
+.border-box-container .border-box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+}
